@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>GoTube</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+    <center> 
+        <img src="https://media.discordapp.net/attachments/754004845404487831/816146311446921216/logo.png?width=1246&height=701">
+        <div class="Body"> 
+            <form action="{{ url_for('post') }}" method="post"> 
+                <input placeholder="Search words from youtube videos..." type="text" name="Sq" class="search-bar"/>
+                <button type="submit" class="btn">Go</button>
+            </form>
+        </div>
+    </center>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        body {
+            font-family: 'Poppins';
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        img {
+            margin: 0;
+            width: 1000px;
+            height: 550px;
+        }
+
+        .search-bar::placeholder {
+            padding: 10px;
+        }
+        .btn {
+            width: 100px;
+            font-size: 20px;
+            border-radius: 0px 100px 100px 0px;
+            border: 1px solid black;
+            height: 42px;
+            color: white;
+            background: linear-gradient(to right, yellow, red);
+        }
+
+
+        .Body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-bar {
+            width: 800px;
+            border-radius: 100px 0px 0px 100px;
+            height: 40px;
+            border: 1px solid black;
+        }
+    </style>
+
+</body>
+</html>
